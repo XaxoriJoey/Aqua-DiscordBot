@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const { Client, MessageEmbed } = require('discord.js'); 
 const client = new Client;
 const embed = new MessageEmbed();
+const token = process.env.DISCORD_BOT_SECRET;
 
 client.once('ready', () => {
     console.log('Konnichiwa, watashi wa aqua onraindesu!'); 
@@ -12,4 +13,4 @@ client.once('ready', () => {
     })
 });
 
-client.login('NzkzNDYyNzQ0NTM5ODU2OTE3.X-snxA.oiDVhbF2bTz3u1gpt8Xy3wJV5ek');
+client.login('token');
